@@ -1,0 +1,20 @@
+.login-interface{
+  margin: 15% 20% 40% 40%;
+}
+.bottom{
+  margin-left: -1px;
+  font-size: 12px;
+}
+#register:hover, #findPassword:hover{
+  color: red;
+}
+#loginButton{
+  margin-left: 170px;
+  width: 50px;
+  height: 25px;
+  background-color: white;
+}
+#loginButton:hover{
+  background-color: black;
+  color: white;
+}
