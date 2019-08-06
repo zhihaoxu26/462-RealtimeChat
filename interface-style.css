@@ -14,7 +14,18 @@
   height: 25px;
   background-color: white;
 }
-#loginButton:hover{
+#registerButton{
+  margin-left: 170px;
+  width: 70px;
+  height: 25px;
+  background-color: white;
+}
+#backButton{
+  width: 80px;
+  height: 25px;
+  background-color: white;
+}
+#loginButton:hover, #registerButton:hover, #backButton:hover{
   background-color: black;
   color: white;
 }

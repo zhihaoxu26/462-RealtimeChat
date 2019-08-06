@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, maximum-scale=1.0">
     <link rel="stylesheet" href="interface-style.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+    <script type="text/javascript" src="interface.js"></script>
   </head>
   <body>
     <div class="login-interface">
       <h1>RealTime Chat App</h1>
-      <pre>Username:   <input id="UserInfo"></input></pre>
-      <pre>Password:   <input id="UserInfo"></input></pre>
+      <pre>UserID:     <input class="userInfo" id="ID" name="ID" type="text"></input></pre>
+      <pre>Password:   <input class="userInfo" id="password" name="password" type="text"></input></pre>
       <br>
-      <button onclick="login" id="loginButton">Login</button>
+      <button onclick="login()" id="loginButton">Login</button>
       <br>
       <br>
       <br>
       <div class="bottom">
-        <a href="register.html" id="register">Register a new account!</a>
+        <a href="./register.html" id="register">Register a new account!</a>
         &nbsp&nbsp&nbsp
-        <a href="findPassword.html" id="findPassword">Forget the password?</a>
+        <a href="./findPassword.html" id="findPassword">Forget the password?</a>
       </div>
     </div>
   </body>
