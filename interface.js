@@ -1,4 +1,5 @@
 "use strict";
+
 function login(){
     var ID = document.getElementById("ID").value;
     var password = document.getElementById("password").value;
@@ -9,9 +10,11 @@ function login(){
     var senddata = JSON.stringify(account);
     $.ajax({
         url: "http://0.0.0.0:7777/login",
+        headers: {  'Access-Control-Allow-Origin': '*' },
         type: "POST",
         data: senddata,
         dataType: "json",
+        crossDomain: "true",
         success: function (data) {
             //if 1 password is correct, otherwise is wrong
             var obj = JSON.parse(data)

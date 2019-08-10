@@ -1,0 +1,83 @@
+span{
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+.login-interface{
+  margin: 15% 20% 40% 40%;
+}
+.chatroom{
+  margin-left: 10%;
+  margin-right: 5%;
+}
+.chatroom{
+  width:50%
+}
+.bottom{
+  margin-left: -1px;
+  font-size: 12px;
+}
+.box{
+  height: 500px;
+  width: 600px;
+  display:inline-block;
+}
+#right {
+  text-align: right;
+  right:0;
+  width:60%;
+  float: right;
+  padding: 10px;
+  word-wrap: break-word;
+}
+#signout{
+  position: absolute;
+  right: 48%;
+}
+#left {
+  text-align: left;
+  width:60%;
+  float: left;
+  padding: 10px;
+  word-wrap: break-word;
+}
+#register:hover, #findPassword:hover{
+  color: red;
+}
+#loginButton{
+  margin-left: 170px;
+  width: 50px;
+  height: 25px;
+  background-color: white;
+}
+#enterButton{
+  width:80px;
+  height:50px;
+  background-color: white;
+  position: absolute;
+  right:47%;
+}
+#registerButton{
+  margin-left: 170px;
+  width: 70px;
+  height: 25px;
+  background-color: white;
+}
+#backButton{
+  width: 80px;
+  height: 25px;
+  background-color: white;
+}
+#loginButton:hover, #registerButton:hover, #backButton:hover, #enterButton:hover{
+  background-color: black;
+  color: white;
+}
+#inputBox{
+  width: 74%;
+  height: 50px;
+  border: 1;
+  border-color:black; 
+}
+#input{
+  color: rgb(121, 132, 233);
+  background-color: rgb(165, 247, 140);
+}

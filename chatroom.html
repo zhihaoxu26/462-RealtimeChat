@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head lang="en">
+    <title>462 RealtimeChatApp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+    <script type="text/javascript" src="register.js"></script>
+    <script type="text/javascript" src="chatroom.js" charset="UTF-8"></script>
+  </head>
+  <body>
+    <div class="chatroom">
+        <div id="displayScreen">
+            <p>Welcome to Chat Room<a href="./interface.html" id="signout">Sign out</a></p>
+            <br>
+            <iframe src="./chatroom1.html" class="box" id="chatscreen" name="chatscreen" frameborder="1" scrolling="yes">
+              <!--print chatting message-->
+            </iframe>
+        </div>
+        <br><br>
+        <div id="userInput">
+          <p>Change to chatroom: 
+            <select id="selectValue">
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+            <button onclick="change()">Change Room</button>
+          </p>
+          <textarea id="inputBox"></textarea>
+
+          <button onclick="enter()" id="enterButton">Enter</button>
+        </div>
+    </div>
+  </body>
+  <script>
+    $(function(){
+    document.onkeydown = function(e){  
+      var ev = document.all ? window.event : e;
+      if(ev.keyCode==13) {
+          enter();
+      }
+    }
+ });
+  </script>
+</html>
